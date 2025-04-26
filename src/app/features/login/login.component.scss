@@ -1,0 +1,109 @@
+@import '../../../assets/styles/gradients';
+@import '../../../assets/styles/mixins';
+
+body {
+    @include flex-center;
+    background: $auth-background-gradient;
+}
+
+.login-container {
+    @include flex-align-center;
+    flex-direction: column;
+    width: 100vw;
+
+    h1 {
+        margin-bottom: 20px;
+        color: white;
+        font-family: "Vibur", cursive;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 100%;
+    }
+}
+
+.login-box {
+    @include flex-align-center;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        font-weight: bold;
+        color: #333;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 100%;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .input {
+            width: 100%;
+        }
+        
+        .remember-me {
+            margin: 15px 0;
+            font-size: 0.9rem;
+            display: flex;
+            gap: 5px;
+    
+            label {
+                display: inline;
+                margin-left: 5px;
+            }
+        }
+
+        .login-button {
+            align-self: center;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 12px;
+    
+            a {
+                color: #84c8cc;
+                text-decoration: none;
+                cursor: pointer;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+    
+            div:first-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        h1 {
+            font-size: 60px;   
+        }
+    }
+
+    .login-box {
+        padding: 30px 20px;
+        width: 90%;
+
+        form {
+            .links {
+                font-size: 0.85rem;
+            }
+        }
+    }
+}
