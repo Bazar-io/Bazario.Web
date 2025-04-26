@@ -1,0 +1,40 @@
+<div class="login-container">
+    <h1>Bazar.io</h1>
+
+    <div class="login-box">
+        <h2>Zaloguj się</h2>
+
+        <form>
+            <app-auth-input
+                class="input"
+                [id]="'email'"
+                [label]="'Email'"
+                [placeholder]="'Napisz swój email'"
+                [type]="'email'"></app-auth-input>
+
+            <app-auth-password-input
+                class="input"
+                [id]="'password'"
+                [label]="'Hasło'"
+                [placeholder]="'Napisz swoje hasło'"></app-auth-password-input>
+
+            <div class="remember-me">
+                <label for="remember">Zapamiętaj mnie</label>
+                <input type="checkbox" id="remember" />
+            </div>
+
+            <app-auth-button
+                class="login-button"
+                [text]="'Zaloguj się'"></app-auth-button>
+
+            <div class="links">
+                <div>
+                    <a>Nie pamiętasz hasła?</a>
+                </div>
+                <div>
+                    <span>Nie posiadasz konta?<a>Załóż konto</a></span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
