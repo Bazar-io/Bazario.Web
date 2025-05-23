@@ -1,3 +1,5 @@
+@import "../node_modules/ngx-countries-dropdown/assets/styles.css";
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vibur&display=swap');
 
 * {
@@ -11,3 +13,17 @@ html, body {
     width: 100vw;
     height: 100vh;
 }
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// input:-webkit-autofill {
+//     -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+//     -webkit-text-fill-color: #000 !important;
+// }

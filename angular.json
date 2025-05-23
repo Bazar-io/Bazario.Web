@@ -32,7 +32,8 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ngx-countries-dropdown/assets/styles.css"
             ],
             "scripts": []
           },
@@ -112,5 +113,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "68a81b34-db6b-4571-b591-9ce2d5df618b"
   }
 }
