@@ -6,6 +6,10 @@ body {
     background: $auth-background-gradient;
 }
 
+a {
+    color: #84c8cc;
+}
+
 .login-container {
     @include flex-align-center;
     flex-direction: column;
@@ -48,6 +52,7 @@ body {
         flex-direction: column;
 
         .input {
+            margin-top: 15px;
             width: 100%;
         }
         
@@ -71,16 +76,6 @@ body {
             text-align: center;
             margin-top: 15px;
             font-size: 12px;
-    
-            a {
-                color: #84c8cc;
-                text-decoration: none;
-                cursor: pointer;
-    
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
     
             div:first-child {
                 margin-bottom: 10px;
