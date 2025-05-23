@@ -1,0 +1,18 @@
+@mixin auth-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+@mixin auth-input {
+    @include auth-input-border;
+    outline: none;
+    width: inherit;
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+}
+
+@mixin auth-input-border {
+    border: 1.5px solid #443C3C;
+}

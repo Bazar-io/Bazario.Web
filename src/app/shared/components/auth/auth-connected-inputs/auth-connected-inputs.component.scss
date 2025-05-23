@@ -1,0 +1,50 @@
+.connected-inputs-container {
+    width: inherit;
+    display: flex;
+
+    ::ng-deep .first-input {
+        width: inherit;
+
+        .input-container {
+            input {
+                border-radius: 8px 0px 0px 8px;
+                border-right: 0;
+            }
+        }
+    }
+
+    ::ng-deep .second-input {
+        width: inherit;
+
+        .input-container {
+            input {
+                border-radius: 0px 8px 8px 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .connected-inputs-container {
+        flex-direction: column;
+        gap: 30px;
+
+        ::ng-deep .first-input {
+            .input-container {
+                input {
+                    border-radius: 8px;
+                    border-right: 1.5px solid #443C3C;
+                }
+            }
+        }
+
+        ::ng-deep .second-input {
+            .input-container {
+                input {
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    
+}
