@@ -1,0 +1,62 @@
+<div class="register-container">
+    <h1>Bazar.io</h1>
+
+    <div class="register-box">
+        <h2>Zarejestruj się</h2>
+
+        <form>
+            <app-auth-input
+                class="input"
+                [id]="'email'"
+                [label]="'Email'"
+                [placeholder]="'Napisz swój email'"
+                [type]="'email'"></app-auth-input>
+
+            <app-auth-password-input
+                class="input"
+                [id]="'password'"
+                [label]="'Hasło'"
+                [placeholder]="'Napisz swoje hasło'"></app-auth-password-input>
+
+            <app-auth-password-input
+                class="input"
+                [id]="'confirmPassword'"
+                [label]="'Powtórz hasło'"
+                [placeholder]="'Powtórz swoje hasło'"></app-auth-password-input>
+
+            <app-auth-connected-inputs
+                class="input"
+                [firstInputId]="'firstName'"
+                [firstInputLabel]="'Imię'"
+                [firstInputPlaceholder]="'Napisz swoje imię'"
+                [secondInputId]="'lastName'"
+                [secondInputLabel]="'Nazwisko'"
+                [secondInputPlaceholder]="'Napisz swoje nazwisko'"
+                ></app-auth-connected-inputs>
+
+            <app-auth-tel-input
+                class="input"
+                [id]="'phoneNumber'"
+                [label]="'Numer telefonu'"
+                [placeholder]="'123-456-789'"></app-auth-tel-input>
+
+            <div class="user-agreement">
+                <input type="checkbox" />
+                <span>
+                    Rejestrując się, potwierdzam, że akceptuję
+                    <a>Regulamin Bazar.io</a>, zapoznałem/am się z
+                    <a>Polityką Prywatności</a> i mam powyżej 18 lat.
+                </span>
+            </div>
+
+            <app-auth-button
+                class="register-button"
+                [text]="'Zarejestruj się'"></app-auth-button>
+
+            <p class="login-link">
+                Już posiadasz konto?
+                <a [routerLink]="['/login']">Zaloguj się</a>
+            </p>
+        </form>
+    </div>
+</div> 
