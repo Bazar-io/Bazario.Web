@@ -1,0 +1,12 @@
+@import '../../styles/mixins';
+
+.header-search-input-container {
+    width: inherit;
+    height: inherit;
+
+    input {
+        @include auth-input;
+        width: inherit;
+        height: inherit;
+    }
+}

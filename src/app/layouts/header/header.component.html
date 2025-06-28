@@ -1,0 +1,22 @@
+<nav class="header-container">
+    <div class="logo-container">
+        <h1>Bazar.io</h1>
+        <img src="/images/categories.svg" />
+    </div>
+    <app-header-search-input
+        [class.hidden]="!searchVisible"
+        class="search-input"
+        [placeholder]="'Szukaj'"></app-header-search-input>
+    <div class="search-container">
+        <img src="/images/search.svg"
+            (click)="toggleSearchVisibility()"
+            width="30px"
+            height="30px" />
+        <a><img src="/images/person.svg"
+            width="20px"
+            height="20px" /></a>
+
+        <app-add-ad-button
+            [text]="'Dodaj ogłoszenie'"></app-add-ad-button>
+    </div>
+</nav>
