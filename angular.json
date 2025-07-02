@@ -33,7 +33,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/ngx-countries-dropdown/assets/styles.css"
+              "node_modules/ngx-countries-dropdown/assets/styles.css",
+              "node_modules/ngx-spinner/animations/ball-pulse.css"
             ],
             "scripts": []
           },
