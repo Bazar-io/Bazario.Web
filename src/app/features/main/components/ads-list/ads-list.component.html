@@ -1,0 +1,23 @@
+<div class="ads-list-container"
+    infiniteScroll
+    [infiniteScrollDisabled]="scrollUnavailabe()"
+    [infiniteScrollDistance]="0"
+    [infiniteScrollThrottle]="0"
+    (scrolled)="onScroll()"
+    [scrollWindow]="true">
+    @for (ad of tempAds(); track ad.id) {
+        <app-ad-element 
+            class="ad-element"
+            [ad]="ad"></app-ad-element>
+    }
+    @if (nextPageLoading) {
+        <div class="spinner-container">
+            <ngx-spinner
+                bdColor="rgba(0, 0, 0, 0)"
+                size="medium"
+                color="#D0C0C0"
+                type="ball-pulse"
+                [fullScreen]="false"></ngx-spinner>
+        </div>
+    }
+</div>

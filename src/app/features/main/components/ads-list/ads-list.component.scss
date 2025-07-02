@@ -1,0 +1,49 @@
+.ads-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 16px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .ad-element {
+        width: calc((100% - 48px) / 4);
+        cursor: pointer;
+    }
+
+    .spinner-container {
+        height: 80px;
+        position: relative;
+        width: 100%;
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 900px) {
+    .ads-list-container {
+        .ad-element {
+            width: calc((100% - 32px) / 3);
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .ads-list-container {
+        .ad-element {
+            width: calc((100% - 16px) / 2);
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .ads-list-container {
+        .ad-element {
+            width: 100%;
+        }
+    }
+}
